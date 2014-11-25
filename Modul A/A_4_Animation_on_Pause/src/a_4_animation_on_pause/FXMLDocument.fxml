@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="424.0" prefWidth="602.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="a_4_animation_on_pause.FXMLDocumentController">
+    <children>
+        <Label fx:id="label" layoutX="193.0" layoutY="146.0" minHeight="16" minWidth="69" text="Пауза" textFill="#f2102e">
+         <font>
+            <Font name="System Bold" size="72.0" />
+         </font>
+         <effect>
+            <DropShadow color="#540e0e" height="53.62" offsetY="10.0" radius="12.905" width="0.0">
+               <input>
+                  <Lighting diffuseConstant="1.21" specularConstant="0.93" specularExponent="18.6" surfaceScale="2.78">
+                     <bumpInput>
+                        <Shadow />
+                     </bumpInput>
+                     <light>
+                        <Light.Distant />
+                     </light>
+                  </Lighting>
+               </input>
+            </DropShadow>
+         </effect></Label>
+      <Button layoutX="146.0" layoutY="92.0" mnemonicParsing="false" onAction="#startAnimation" text="Старт" />
+      <Button layoutX="373.0" layoutY="92.0" mnemonicParsing="false" onAction="#stopAnimation" text="Стоп" />
+    </children>
+</AnchorPane>

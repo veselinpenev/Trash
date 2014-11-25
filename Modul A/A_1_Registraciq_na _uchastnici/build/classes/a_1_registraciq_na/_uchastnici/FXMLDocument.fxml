@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="385.0" prefWidth="523.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="a_1_registraciq_na._uchastnici.FXMLDocumentController">
+   <children>
+      <MenuBar>
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#saveFile" text="Save..." />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Edit">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Delete" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Help">
+            <items>
+              <MenuItem mnemonicParsing="false" text="About" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <TextField fx:id="textFieldName" layoutX="128.0" layoutY="59.0" />
+      <Label layoutX="16.0" layoutY="63.0" text="Ime na uchastnik: " />
+      <Button layoutX="37.0" layoutY="109.0" mnemonicParsing="false" onAction="#addName" text="Dobavi" />
+      <Button layoutX="183.0" layoutY="109.0" mnemonicParsing="false" onAction="#deleteName" prefHeight="25.0" prefWidth="54.0" text="Iztrii" />
+      <ListView fx:id="listView" layoutX="37.0" layoutY="151.0" prefHeight="200.0" prefWidth="200.0" />
+   </children>
+</AnchorPane>
